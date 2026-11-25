@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>亲子故事会 · Kids Story Time</title>
+<style>
+.page {
+    display: inline-block;
+    background-color: #FCE9C9;
+    box-shadow: 0 0 30px rgba(80, 58, 35, 0.25);
+    text-align: left;
+    max-width: 720px;
+}
+
+/* 并集选择器 h1,h2,h3,h4,h5,h6 */
+h1, h2, h3, h4, h5, h6 {
+    color:#6b4423;
+}
+
+/* ID选择器 p#intro */
+p#intro {
+    font-size:120%;
+    font-weight:bold;
+    color:#c84630;
+}
+
+/* 带类名的链接 */
+a.red {
+    color:red;
+}
+a.blue {
+    color:blue;
+}
+
+/* 链接伪类 */
+a:link {color:#333; text-decoration:none;}
+a:visited {color:#555;}
+a:hover {color:#c84630; text-decoration:underline;}
+a:active {color:orange;}
+
+/* 后代选择器 div table a */
+div table a {
+    font-style:italic;
+}
+
+/* 伪元素 */
+p::first-letter {
+    font-size:150%;
+}
+div::first-line {
+    font-weight:500;
+}
+
+/* notice公告样式 */
+.notice {
+    margin-top:10px;
+}
+</style>
+</head>
+<body>
+<div class="page">
+    <!-- ①顶部标题区 -->
+    <div>
+        <h1>尤克里里社 · 亲子故事会招新</h1>
+    </div>
+
+    <!-- ②活动介绍区 -->
+    <div>
+        <h2 id="intro">活动介绍</h2>
+        <p>欢迎来到尤克里里社团亲子故事会！我们把温柔小故事和轻快的尤克里里弹唱结合在一起，家长和小朋友一起听故事、学简单弹唱，在温暖的氛围里度过美好的时光。</p>
+        <p>我们准备了绘本故事、简单儿歌弹唱、亲子互动小游戏，没有门槛，不管会不会乐器都可以参加。小朋友可以大胆表达，家长可以陪伴孩子一起感受音乐和故事的魅力。</p>
+        <p id="intro">重要提示：本次活动面向本校学生以及学生家长，欢迎带小朋友一起来报名！</p>
+    </div>
+
+    <!-- ③报名信息表格区（≥4行，包含儿童昵称：多多） -->
+    <div>
+        <h3>报名信息表</h3>
+        <table border="1" cellpadding="6">
+            <tr>
+                <th>姓名</th>
+                <th>身份</th>
+                <th>联系备注</th>
+                <th>详情</th>
+            </tr>
+            <tr>
+                <td>多多</td>
+                <td>小朋友</td>
+                <td>喜欢小动物故事</td>
+                <td><a href="#">查看</a></td>
+            </tr>
+            <tr>
+                <td>李沐阳</td>
+                <td>家长</td>
+                <td>想和孩子一起学弹唱</td>
+                <td><a href="#">查看</a></td>
+            </tr>
+            <tr>
+                <td>球球</td>
+                <td>小朋友</td>
+                <td>想听公主故事</td>
+                <td><a href="#">查看</a></td>
+            </tr>
+            <tr>
+                <td>陈知予</td>
+                <td>家长</td>
+                <td>零基础，愿意尝试</td>
+                <td><a href="#">查看</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- ④页面链接区 -->
+    <div>
+        <a class="red" href="https://hongchenwusdnu.github.io/bookstore/job4.html">查看往期活动照片</a>
+        <br>
+        <a class="blue" href="job4.html">在线咨询活动详情</a>
+    </div>
+
+    <!-- ⑤底部公告区 -->
+    <div class="notice">
+        公告1：报名截止时间为本周五晚20:00，请尽早提交信息<br>
+        公告2：活动地点在教学楼204活动室，现场会提供绘本和尤克里里试用<br>
+        公告3：现场座位有限，成功报名后我们会短信通知确认席位
+    </div>
+</div>
+</body>
+</html>
